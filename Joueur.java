@@ -1,13 +1,11 @@
 public class Joueur {
     private String nom;
+    private String prenom;
     private String couleur;
 
-    public Joueur() {
-        this("", "");
-    }
-
-    public Joueur(String nom, String couleur) {
+    public Joueur(String nom, String prenom, String couleur) {
         this.nom = nom;
+        this.prenom = prenom;
         this.couleur = couleur;
     }
 
@@ -17,6 +15,14 @@ public class Joueur {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+        public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
     public String getCouleur() {

@@ -1,14 +1,25 @@
 public class Terrain {
-    private int lignes;
-    private int colonnes;
+    private int lignes = 6;
+    private int colonnes = 7;
 
-    public Terrain() {
-        this(6, 7);
-    }
+    private Position[][] positions;
 
     public Terrain(int lignes, int colonnes) {
         this.lignes = lignes;
         this.colonnes = colonnes;
+        for (int x = 0; x < lignes; x++ ) {
+            for (int y = 0; y < colonnes; y++) {
+                positions[x][y] = new Position(x,y);
+            }
+        }
+    }
+
+        public Terrain() {
+        for (int x = 0; x < lignes; x++ ) {
+            for (int y = 0; y < colonnes; y++) {
+                positions[x][y] = new Position(x,y);
+            }
+        }
     }
 
     public int getLignes() {

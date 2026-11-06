@@ -4,9 +4,6 @@ public class Position {
     private int ordonnee;
     private String couleur;
 
-    public Position() {
-        this(0, 0, "vert");
-    }
 
     public Position(String couleur) {
         this(0, 0, couleur);
@@ -16,6 +13,11 @@ public class Position {
         this.abscisse = abscisse;
         this.ordonnee = ordonnee;
         this.couleur = couleur;
+    }
+        public Position(int abscisse, int ordonnee) {
+        this.abscisse = abscisse;
+        this.ordonnee = ordonnee;
+        this.couleur ="vert";
     }
 
     public int getAbscisse() {
