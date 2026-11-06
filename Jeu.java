@@ -3,12 +3,6 @@ public class Jeu {
     private Joueur joueur2;
     private Terrain terrain;
 
-    // public Jeu() {
-    //     this.joueur1 = new Joueur();
-    //     this.joueur2 = new Joueur();
-    //     this.terrain = new Terrain();
-    // }
-
     public Jeu(Joueur joueur1, Joueur joueur2, Terrain terrain) {
         this.joueur1 = joueur1;
         this.joueur2 = joueur2;
