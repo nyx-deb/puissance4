@@ -24,7 +24,7 @@
 
 ## À propos
 
-**Puissance 4** est un projet académique développé en Java dans le cadre d'un cours de programmation. Il met en pratique les bases de la programmation orientée objet : classes, encapsulation, constructeurs, héritage de concepts et manipulation de tableaux multidimensionnels.
+**Puissance 4** est un projet académique développé en Java dans le cadre du cours de programmation de **l'ESGIS Bénin**, promotion **L2IRT**, **Groupe 5**. Il met en pratique les bases de la programmation orientée objet : classes, encapsulation, constructeurs, héritage de concepts et manipulation de tableaux multidimensionnels.
 
 Le projet est actuellement en cours de développement. La structure de base (joueurs, terrain, positions, jeu) est en place et sert de fondation au futur moteur de jeu.
 
@@ -84,6 +84,15 @@ Sophie
 - Ajouter un mode joueur contre ordinateur
 - Séparer la logique métier de l'affichage (architecture MVC)
 - Écrire des tests unitaires avec JUnit
+
+## Contexte académique
+
+| | |
+| --- | --- |
+| **Établissement** | ESGIS Bénin |
+| **Filière** | Licence 2 Informatique et Réseaux de Télécommunications (L2IRT) |
+| **Groupe** | Groupe 5 |
+| **Cadre** | Projet de cours de programmation Java |
 
 ## Auteur
 
