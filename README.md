@@ -22,11 +22,18 @@
 
 ---
 
+> **Projet en cours de développement**
+> Ce projet n'est pas encore terminé. De nouvelles fonctionnalités et améliorations seront ajoutées progressivement. La version actuelle pose les fondations du jeu.
+
 ## À propos
 
 **Puissance 4** est un projet académique développé en Java dans le cadre du cours de programmation de **l'ESGIS Bénin**, promotion **L2IRT**, **Groupe 5**. Il met en pratique les bases de la programmation orientée objet : classes, encapsulation, constructeurs, héritage de concepts et manipulation de tableaux multidimensionnels.
 
 Le projet est actuellement en cours de développement. La structure de base (joueurs, terrain, positions, jeu) est en place et sert de fondation au futur moteur de jeu.
+
+## État du projet
+
+Le projet est en **développement actif**. Les éléments ci-dessous indiquent ce qui est déjà en place et ce qui reste à implémenter.
 
 ## Fonctionnalités
 
@@ -78,8 +85,13 @@ Bro ton prenom
 Sophie
 ```
 
-## Pistes d'amélioration
+## Améliorations prévues
 
+Le projet évoluera encore. Voici les améliorations envisagées :
+
+- Finaliser la boucle de jeu et l'alternance des tours
+- Implémenter la détection des victoires et du match nul
+- Ajouter un affichage soigné de la grille dans le terminal
 - Rendre la grille dynamique selon les dimensions du terrain
 - Ajouter un mode joueur contre ordinateur
 - Séparer la logique métier de l'affichage (architecture MVC)
