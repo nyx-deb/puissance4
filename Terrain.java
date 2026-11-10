@@ -2,8 +2,6 @@ public class Terrain {
     private int lignes = 6;
     private int colonnes = 7;
 
-    // Convention : abscisse = numero de ligne (0 = haut de la grille),
-    //              ordonnee = numero de colonne (0 = colonne de gauche).
     private Position[][] positions;
 
     public Terrain(int lignes, int colonnes) {
