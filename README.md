@@ -1,53 +1,99 @@
-<h1 align="center">Puissance 4</h1>
+<div align="center">
 
-<p align="center">
-  <em>Un jeu de Puissance 4 en Java, pensé pour l'apprentissage de la programmation orientée objet.</em>
-</p>
+# Puissance 4
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/POO-6A1B9A?style=for-the-badge&logo=codeforces&logoColor=white" />
-  <img src="https://img.shields.io/badge/ALGO-FF00FF?style=for-the-badge&logo=codeforces&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
-  <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" />
-</p>
+**Un jeu de Puissance 4 en Java, pensé pour l'apprentissage de la programmation orientée objet.**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/statut-en_développement-yellow?style=flat-square" />
-  <img src="https://img.shields.io/badge/version-0.1-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/licence-MIT-green?style=flat-square" />
-</p>
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+[![POO](https://img.shields.io/badge/POO-6A1B9A?style=for-the-badge&logo=codeforces&logoColor=white)](#)
+[![ALGO](https://img.shields.io/badge/ALGO-FF00FF?style=for-the-badge&logo=codeforces&logoColor=white)](#)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#)
+[![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](#)
+
+[![Statut](https://img.shields.io/badge/statut-en_développement-yellow?style=flat-square)](#état-du-projet)
+[![Version](https://img.shields.io/badge/version-0.1-blue?style=flat-square)](#)
+[![Licence](https://img.shields.io/badge/licence-MIT-green?style=flat-square)](LICENSE)
+[![Dernier commit](https://img.shields.io/github/last-commit/nyx-deb/puissance4?style=flat-square&label=dernier%20commit)](https://github.com/nyx-deb/puissance4/commits/main)
+
+</div>
 
 ---
 
 > **Projet en cours de développement**
 > Ce projet n'est pas encore terminé. De nouvelles fonctionnalités et améliorations seront ajoutées progressivement. La version actuelle pose les fondations du jeu.
 
+## Sommaire
+
+- [À propos](#à-propos)
+- [Aperçu](#aperçu)
+- [État du projet](#état-du-projet)
+- [Structure du projet](#structure-du-projet)
+- [Installation et exécution](#installation-et-exécution)
+- [Améliorations prévues](#améliorations-prévues)
+- [Contexte académique](#contexte-académique)
+- [Licence](#licence)
+
 ## À propos
 
-**Puissance 4** est un projet académique développé en Java dans le cadre du cours de programmation de **l'ESGIS Bénin**, promotion **L2IRT**, **Groupe 5**. Il met en pratique les bases de la programmation orientée objet : classes, encapsulation, constructeurs, héritage de concepts et manipulation de tableaux multidimensionnels.
+**Puissance 4** est un projet académique développé en Java dans le cadre du cours de programmation de **l'ESGIS Bénin**, promotion **L2IRT**, **Groupe 5**.
 
-Le projet est actuellement en cours de développement. La structure de base (joueurs, terrain, positions, jeu) est en place et sert de fondation au futur moteur de jeu.
+Il met en pratique les fondamentaux de la programmation orientée objet : classes, encapsulation, constructeurs, composition et manipulation de tableaux multidimensionnels. L'objectif est de construire progressivement un jeu complet et fonctionnel.
+
+## Aperçu
+
+```text
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   | O |   |   |   |
++---+---+---+---+---+---+---+
+|   |   | O | X |   |   |   |
++---+---+---+---+---+---+---+
+|   | X | O | X | O |   |   |
++---+---+---+---+---+---+---+
+        ^
+      colonne
+```
 
 ## État du projet
 
 Le projet est en **développement actif**. Les éléments ci-dessous indiquent ce qui est déjà en place et ce qui reste à implémenter.
 
-## Fonctionnalités
-
-- [x] Modélisation d'un **joueur** (nom, prénom, couleur)
-- [x] Modélisation d'un **terrain** de 6 lignes sur 7 colonnes
-- [x] Représentation des **positions** sur la grille
-- [x] Classe **Jeu** reliant joueurs et terrain
-- [ ] Saisie interactive des noms de joueurs
-- [ ] Boucle de jeu et alternance des tours
-- [ ] Vérification des victoires (lignes, colonnes, diagonales)
-- [ ] Détection du match nul
-- [ ] Affichage de la grille dans le terminal
+| Fonctionnalité | État |
+| --- | :---: |
+| Modélisation du joueur (nom, prénom, couleur) | Terminé |
+| Terrain de 6 lignes sur 7 colonnes | Terminé |
+| Représentation des positions sur la grille | Terminé |
+| Classe `Jeu` reliant joueurs et terrain | Terminé |
+| Saisie interactive des noms de joueurs | Terminé |
+| Boucle de jeu et alternance des tours | À venir |
+| Vérification des victoires et du match nul | À venir |
+| Affichage de la grille dans le terminal | À venir |
+| Mode joueur contre ordinateur | À venir |
 
 ## Structure du projet
+
+```text
+puissance4/
+├── Main.java       Point d'entrée, saisie des joueurs
+├── Joueur.java     Joueur et couleur de pion
+├── Terrain.java    Grille de jeu et dimensions
+├── Position.java   Case du terrain (abscisse, ordonnée, couleur)
+├── Jeu.java        Orchestration d'une partie
+├── README.md       Documentation du projet
+├── CHANGELOG.md    Historique des modifications
+└── LICENSE         Licence MIT
+```
+
+<details>
+<summary><strong>Détail des classes</strong></summary>
 
 | Fichier | Rôle |
 | --- | --- |
@@ -57,12 +103,16 @@ Le projet est en **développement actif**. Les éléments ci-dessous indiquent c
 | `Position.java` | Définit une case du terrain (abscisse, ordonnée, couleur) |
 | `Jeu.java` | Orchestre le déroulement d'une partie |
 
-## Prérequis
+</details>
+
+## Installation et exécution
+
+### Prérequis
 
 - **Java** 8 ou supérieur (JDK)
 - Un terminal ou un IDE Java (IntelliJ IDEA, Eclipse, VS Code)
 
-## Installation et exécution
+### Lancement
 
 ```bash
 git clone git@github.com:nyx-deb/puissance4.git
@@ -72,7 +122,7 @@ javac *.java
 java Main
 ```
 
-Exemple de déroulement au lancement :
+### Exemple
 
 ```text
 Joueur1 accouche ton nom
@@ -112,4 +162,12 @@ Le projet évoluera encore. Voici les améliorations envisagées :
 
 ## Licence
 
-Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE` pour plus d'informations.
+Ce projet est distribué sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
+
+<div align="center">
+
+---
+
+Réalisé dans le cadre du cours de programmation Java à l'ESGIS Bénin
+
+</div>
