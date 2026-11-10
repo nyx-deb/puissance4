@@ -32,4 +32,19 @@ public class Jeu {
     public void setTerrain(Terrain terrain) {
         this.terrain = terrain;
     }
+
+    /**
+     * Joue un coup : depose le pion du joueur dans la colonne (numerotee a partir de 0)
+     * puis verifie si ce coup donne la victoire.
+     *
+     * @return true si le joueur vient de gagner, false sinon
+     * @throws IllegalArgumentException si la colonne n'existe pas ou est pleine
+     */
+    public boolean jouerCoup(Joueur joueur, int colonne) {
+        Position position = terrain.deposerPiece(colonne, joueur.getCouleur());
+        if (position == null) {
+            throw new IllegalArgumentException("Colonne invalide ou pleine : " + (colonne + 1));
+        }
+        return terrain.verifierVictoire(position);
+    }
 }
