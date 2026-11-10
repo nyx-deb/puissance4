@@ -14,5 +14,12 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 - Ajout du fichier de licence MIT.
 - Refonte visuelle du README : badges, sommaire, aperçu ASCII et détails repliables.
 - Fichier CHANGELOG.
+- Fichier `.gitignore` pour ignorer les fichiers compilés `.class`.
+
+### Corrigé
+
+- `Terrain` : initialisation du tableau `positions`, qui provoquait une `NullPointerException` au lancement.
+- `Terrain` : ajout de `getPosition`, `setPosition` et `getPositions`.
+- `Position` : constructeur à deux arguments initialisant désormais une case vide et indentation normalisée.
 
 [Non publié]: https://github.com/nyx-deb/puissance4/commits/main

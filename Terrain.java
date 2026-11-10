@@ -1,23 +1,20 @@
 public class Terrain {
-    private int lignes = 6;
-    private int colonnes = 7;
+    private int lignes;
+    private int colonnes;
 
     private Position[][] positions;
+
+    public Terrain() {
+        this(6, 7);
+    }
 
     public Terrain(int lignes, int colonnes) {
         this.lignes = lignes;
         this.colonnes = colonnes;
-        for (int x = 0; x < lignes; x++ ) {
+        this.positions = new Position[lignes][colonnes];
+        for (int x = 0; x < lignes; x++) {
             for (int y = 0; y < colonnes; y++) {
-                positions[x][y] = new Position(x,y);
-            }
-        }
-    }
-
-        public Terrain() {
-        for (int x = 0; x < lignes; x++ ) {
-            for (int y = 0; y < colonnes; y++) {
-                positions[x][y] = new Position(x,y);
+                positions[x][y] = new Position(x, y);
             }
         }
     }
@@ -36,5 +33,17 @@ public class Terrain {
 
     public void setColonnes(int colonnes) {
         this.colonnes = colonnes;
+    }
+
+    public Position getPosition(int abscisse, int ordonnee) {
+        return positions[abscisse][ordonnee];
+    }
+
+    public void setPosition(int abscisse, int ordonnee, Position position) {
+        positions[abscisse][ordonnee] = position;
+    }
+
+    public Position[][] getPositions() {
+        return positions;
     }
 }
