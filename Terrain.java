@@ -107,6 +107,17 @@ public class Terrain {
         return compte;
     }
 
+    public boolean estPleine() {
+        for (int x = 0; x < lignes; x++) {
+            for (int y = 0; y < colonnes; y++) {
+                if (positions[x][y].estVide()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
     // Affiche la grille dans le terminal (V = vert, R = rouge)
     public void afficher() {
         StringBuilder sb = new StringBuilder();
